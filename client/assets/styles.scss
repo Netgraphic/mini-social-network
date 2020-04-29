@@ -1,0 +1,256 @@
+@import 'variables';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+/* Generales */
+.h1-strong {
+    font-size: 35px;
+    font-weight: bold;
+    //margin-left: 13px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.active {
+    background: $darkred;
+}
+
+.sidebar-admin {
+    .active {
+        background: $red;
+        
+        a {
+            color: #fff;
+        }
+    }
+}
+
+/* Cabecera */
+.navigation {
+    padding: 0 !important;
+    
+    .navbar {
+        background: $red;
+        padding: 0 !important;
+
+        a {
+            color: #fff !important;
+            transition: background .3s ease-in-out;
+
+            &:hover {
+                background: $darkred;
+            }
+        }
+
+        .nav-link {
+            padding: 15px !important;
+        }
+    }
+
+    .dropdown-menu {
+        background: $darkred !important;
+        left: inherit;
+        right: 0;
+        margin: 0;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .avatar {
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-top: 9px;
+
+        img {
+            height: 35px;
+        }
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.jumbotron {
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Gente */
+.people {
+    min-height: 500px;
+}
+
+.item-user, .item-publication {
+    margin-bottom: 20px;
+
+    .image-user {
+        width: 75px;
+        height: 75px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-right: 15px;
+    
+        img {
+            width: 140px;
+        }
+    }
+
+    .username {
+        margin-top: 10px;
+    }
+}
+
+.name-surname a {
+    color: #555;
+    font-weight: bold;
+}
+
+.nickname {
+    color: #999;
+}
+
+/* Sidebar */
+.sideber-32 {
+    width: 32%;
+    padding: 0 !important;
+}
+
+#new-publication {
+    padding: 18px 18px 18px 8px;
+    width: 32%;
+}
+
+#user-card {
+    padding: 25px;
+    width: 32%;
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-right: 15px;
+    }
+    
+    .name-surname {
+        font-weight: 300;
+        font-size: 17px;
+        
+        a {
+            color: #555;
+        }
+
+        .nickname {
+            color: #999;
+        }
+    }
+
+    .label-stats {
+        color: #555;
+    }
+
+    .number-stats {
+        color: $green;
+    }
+
+    .label-stats, .number-stats {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        transition: all .3s ease-in-out;
+    }
+
+    .following-data {
+        float: left;
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-top: 10px;
+        border-right: 2px solid #eee;
+
+        &:first-child {
+            padding-left: 6px;
+        }
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    .stats {
+        border-top: 1px solid #eee;
+        margin-top: 10px;
+
+        a:hover {
+            text-decoration: none;
+
+            .number-stats {
+                color: $darkred;
+            }
+        }
+    }
+}
+
+
+/* Timeline */
+#publications {
+    min-height: 500px;
+
+    .date {
+        color: #aaa;
+    }
+}
+
+/* Perfiles */
+#data-profile {
+    min-height: 500px;
+
+    .avatar {
+        width: 185px;
+        height: 185px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .username {
+        margin-top: 15px;
+
+        .badge {
+            margin-bottom: 15px;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .nick {
+            font-size: 24px;
+            color: #999;
+        }
+    }
+
+    .stats {
+        border-left: 4px solid #ccc;
+        margin-left: 35px;
+        padding-left: 25px;
+        height: 180px;
+
+        a {
+            font-size: 20px;
+            line-height: 35px;
+            color: #555;
+        }
+    }
+
+    .publications {
+        float: left;
+        margin-top: 40px;
+    }
+}
